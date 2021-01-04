@@ -1,0 +1,33 @@
+.form
+{
+    width: 300px;
+    margin: auto;
+    color: rgb(53, 51, 56);
+}
+
+.submitbutton
+{
+    padding: 13px;
+    margin: auto;
+    border: 0;
+    border-radius: 9%;
+    color: white;
+    background: linear-gradient(201deg, #50d954, #4faeca9e);
+}
+.submitbutton:focus
+{
+    outline: none;
+}
+.submitbutton:hover
+{
+    background: linear-gradient(201deg, #39b1d670, #50d955a4)
+}
+.inputtag
+{
+    padding:10px;
+}
+
+.inputtag:focus, input:focus{
+    outline: palegreen;
+    
+}
