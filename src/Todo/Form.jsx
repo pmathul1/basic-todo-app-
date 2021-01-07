@@ -7,8 +7,9 @@ let Form = ({todos,setTodos,input,setInput}) =>
         setInput(e.target.value);
         
     };
-    let setTodosFunction=()=>
+    let setTodosFunction=(e)=>
     {
+        e.preventDefault();
         if(input)
         {
             setTodos([...todos,{id:todos.length+100,task:input}]);
@@ -18,13 +19,13 @@ let Form = ({todos,setTodos,input,setInput}) =>
     };
 
     return (
-        <div className="form">
+        <form className="form" action="POST" onSubmit={setTodosFunction} >
             <h1>Todo List</h1>
             <label>
-                <input className="inputtag" required type="text" placeholder="Enter New Task" onChange={(e)=>{setInputFunction(e)}}/>
-                <button className="submitbutton" onClick={setTodosFunction} >Add Task</button>
+                <input className="inputtag" value={input} type="text" placeholder="Enter New Task" onChange={(e)=>{setInputFunction(e)}}/>
+                <button className="submitbutton" >Add Task</button>
             </label>
-        </div>
+        </form>
     )
 }
 

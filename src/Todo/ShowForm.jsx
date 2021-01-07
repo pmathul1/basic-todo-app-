@@ -6,7 +6,7 @@ import '../css/ShowForm.css'
  {
     return (
         <div className="showform">
-        {todos.map((event,index)=>(<Li event={event} index={index} todos={todos} setTodos={setTodos} />))}
+        {todos.map((event,index)=>(<Li key={index} event={event} index={index} todos={todos} setTodos={setTodos} />))}
         </div>
     )
 }

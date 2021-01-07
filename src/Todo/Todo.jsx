@@ -2,7 +2,7 @@ import {React,useState} from 'react'
 import Form from './Form';
 import ShowForm from './ShowForm';
 import "../css/Todo.css"
-let Todo = ()=>
+let Todo = (prop)=>
 {
     let [todos,setTodos]=useState([]);
     let [input,setInput]=useState("");

@@ -2,7 +2,7 @@ import React from 'react'
 import Todo from './Todo/Todo'
 import './App.css'
 
- let App=()=>
+ let App=(props)=>
  {
   return (
     <div>
